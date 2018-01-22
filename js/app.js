@@ -114,8 +114,8 @@ var resetOpen= function() {
  numberStars=document.getElementsByClassName('fa fa-star');
  var numStars = 3;
  // Difficulty settings (max number of moves for each star)
- var hard = 10;
- var medium = 20;
+ const hard = 10;
+ const medium = 20;
 
  var finalStars=document.getElementById('num-stars');
  var moves=document.getElementById('moves');
