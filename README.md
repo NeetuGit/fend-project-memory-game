@@ -3,11 +3,11 @@ This game is a part of Udacity course project. Basic understanding of HTM,CSS an
 
 ## How to play
 
-###Games Logic
+## Games Logic
 The game will start on click of cards. On the click of card, the card will flip and show. If two cards matched, it will remained open otherwise fliped back.
 Game will finish showing a congratulation message after matching all the cards.
 
-###Star Rating
+## Star Rating
  3 stars = 10 moves or less  
  2 stars = 20 moves or less  
  1 star = 21 moves or more
