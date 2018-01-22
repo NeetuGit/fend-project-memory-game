@@ -2,8 +2,9 @@
 This game is a part of Udacity course project. Basic understanding of HTM,CSS and Javscript have been used thought out this game.
 
 ## How to play
+You can play the game here  https://neetugit.github.io/fend-project-memory-game/
 
-## Games Logic
+## Game Logic
 The game will start on click of cards. On the click of card, the card will flip and show. If two cards matched, it will remained open otherwise fliped back.
 Game will finish showing a congratulation message after matching all the cards.
 
