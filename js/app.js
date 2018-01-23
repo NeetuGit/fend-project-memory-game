@@ -77,6 +77,7 @@ var icons = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o",
 	  }
 	  deck.innerHTML = newCards;
 	}
+  var timerLogo=document.getElementById('spinner');
 
 	function openCards() {
 		if(!this.classList.contains('open')){
@@ -89,11 +90,17 @@ var icons = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o",
 			this.classList.remove('show');
 			this.classList.add('card');
 			}
-		moveCounter++;
-	   updateMoveCounter();
+		// moveCounter++;
+	  //  updateMoveCounter();
 
 	    if(open.length===2)
 	     match();
+       moveCounter++;
+		   if(moveCounter===1){
+			   resetTimer();
+			   timerLogo.style.display="inline-block";
+			 };
+	    updateMoveCounter();
 }
 
 function match() {
@@ -165,6 +172,7 @@ function ratingStars() {
 
  function showModal() {
      modal.style.display = "block";
+     timerLogo.style.display="none";
      var allMoves= document.getElementById('totalMoves');
      allMoves.innerHTML = no_ofMoves;
      var totalTime=document.getElementById('complitionTime');
@@ -182,7 +190,7 @@ function ratingStars() {
 
 //Game begins here
 
-resetTimer();
+//resetTimer();
 startGame();
 cards = document.querySelectorAll('.card');
 
