@@ -61,6 +61,10 @@ h1 {
     color: orange;
 }
 
+.score-panel .timeSpinner {
+    display: inline-block;
+}
+
 .score-panel .restart {
     float: right;
     cursor: pointer;
@@ -70,6 +74,9 @@ h1 {
     margin-left: 50px;
 }
 
+#spinner {
+	display: none;
+}
 /*
  * Styles for the deck of cards
  */
