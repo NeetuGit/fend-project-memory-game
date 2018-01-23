@@ -1,3 +1,6 @@
+//accessing background sound
+let backsound= document.getElementById('bgSound');
+
 //timer declarations
  var timer = {
     seconds: 0,
@@ -175,6 +178,7 @@ function ratingStars() {
      allMoves.innerHTML = no_ofMoves;
      var totalTime=document.getElementById('complitionTime');
      totalTime.innerHTML=time;
+	 backsound.pause();
  }
 
  function resetGame() {
@@ -188,7 +192,7 @@ function ratingStars() {
 
 //Game begins here
 
-//resetTimer();
+document.body.onload=backsound.play();
 startGame();
 cards = document.querySelectorAll('.card');
 
