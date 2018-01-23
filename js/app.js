@@ -90,8 +90,6 @@ var icons = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o",
 			this.classList.remove('show');
 			this.classList.add('card');
 			}
-		// moveCounter++;
-	  //  updateMoveCounter();
 
 	    if(open.length===2)
 	     match();
@@ -99,7 +97,7 @@ var icons = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o",
 		   if(moveCounter===1){
 			   resetTimer();
 			   timerLogo.style.display="inline-block";
-			 };
+			 }
 	    updateMoveCounter();
 }
 
